@@ -1,0 +1,19 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nol4lej/portafolioweb.git"
+  },
+  "author": "nol4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nol4lej/portafolioweb/issues"
+  },
+  "homepage": "https://github.com/nol4lej/portafolioweb#readme"
+}
