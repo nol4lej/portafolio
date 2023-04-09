@@ -24,9 +24,10 @@
     </nav>
 
     <header class="h-screen grid grid-cols-2 border p-40">
-        <div class="border grid justify-center content-center">
-            <h1 id="text1" class="text-6xl "></h1>
-            <p id="text2" class="text-3xl text-center"></p>
+        <div class="border grid justify-center content-center text-center">
+            <h1 id="text1" class="text-6xl"></h1>
+            <h1 id="text2" class="text-6xl"></h1>
+            <p id="text3" class="text-3xl text-center"></p>
         </div>
         <div class="border grid justify-center content-center">
             IMG
@@ -37,17 +38,21 @@
 
 <script>
 
-    let string1 = "Hello, I'm Nolasco Medina."; /* type your text here */
-    let string2 = "Full Stack Web Developer.";
-    var array1 = string1.split("");
-    var array2 = string2.split("");
-    var timer;
+    let string1 = "Hello,";
+    let string2 = "I'm Nolasco Medina";
+    let string3 = "Full Stack Web Developer.";
+    let array1 = string1.split("");
+    let array2 = string2.split("");
+    let array3 = string3.split("");
+    let timer;
 
     function frameLooper () {
         if (array1.length > 0) {
             document.getElementById("text1").innerHTML += array1.shift();
         } else if (array2.length > 0) {
             document.getElementById("text2").innerHTML += array2.shift();
+        } else if (array3.length > 0) {
+            document.getElementById("text3").innerHTML += array3.shift();
         } else {
             clearTimeout(timer);
         }

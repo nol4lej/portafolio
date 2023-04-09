@@ -5,6 +5,8 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* HEADER BACKGROUND */
+
 header{
     background-image: url("https://3.bp.blogspot.com/-04vqcpHNiuo/W0x2THLFZXI/AAAAAAAAOl8/DUvOAykZU9Q0rVaRw4nFTWQM-d8__k-agCLcBGAs/s1600/dresscounter.jpg");
     -webkit-animation: bg-animation 25s ease-in-out infinite;
@@ -33,4 +35,10 @@ header{
     100% {
         background-position: top;
     }
+}
+
+/* END HEADER BACKGROUND */
+
+header > div > h1:first-child{
+    color: aqua;
 }
