@@ -23,9 +23,39 @@
         </div>
     </nav>
 
-    <header class="">
-
+    <header class="h-screen grid grid-cols-2 border p-40">
+        <div class="border grid justify-center content-center">
+            <h1 id="text1" class="text-6xl "></h1>
+            <p id="text2" class="text-3xl text-center"></p>
+        </div>
+        <div class="border grid justify-center content-center">
+            IMG
+        </div>
     </header>
 
 </body>
+
+<script>
+
+    let string1 = "Hello, I'm Nolasco Medina."; /* type your text here */
+    let string2 = "Full Stack Web Developer.";
+    var array1 = string1.split("");
+    var array2 = string2.split("");
+    var timer;
+
+    function frameLooper () {
+        if (array1.length > 0) {
+            document.getElementById("text1").innerHTML += array1.shift();
+        } else if (array2.length > 0) {
+            document.getElementById("text2").innerHTML += array2.shift();
+        } else {
+            clearTimeout(timer);
+        }
+        loopTimer = setTimeout('frameLooper()',70); /* change 70 for speed */
+
+    }
+    frameLooper();
+
+
+</script>
 </html>
