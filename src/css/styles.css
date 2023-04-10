@@ -6,12 +6,14 @@ body{
 }
 
 /* HEADER BACKGROUND */
-
 header{
     background-image: url("https://3.bp.blogspot.com/-04vqcpHNiuo/W0x2THLFZXI/AAAAAAAAOl8/DUvOAykZU9Q0rVaRw4nFTWQM-d8__k-agCLcBGAs/s1600/dresscounter.jpg");
     -webkit-animation: bg-animation 25s ease-in-out infinite;
     animation: bg-animation 25s ease-in-out infinite;
+    filter: drop-shadow(0 50px 50px rgba(0, 0, 0, 1));
+    
 }
+
 
 @-webkit-keyframes bg-animation {
     0% {
@@ -36,9 +38,34 @@ header{
         background-position: top;
     }
 }
-
 /* END HEADER BACKGROUND */
 
 header > div > h1:first-child{
     color: aqua;
 }
+
+header > div > h1:nth-child(2){
+    color: rgb(255, 255, 255);
+}
+
+header > div > p{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-decoration-color: #fff;
+    text-underline-position: under;
+    color: aqua;
+}
+
+.fade-in-down{
+    animation: fade-in-down2 1s ease;
+  }
+  @keyframes fade-in-down2 {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -9,30 +9,50 @@
     <title>Document</title>
 </head>
 <body class="">
-
-    <nav class="border grid grid-cols-3 w-full absolute">
-        <div class="border grid justify-center content-center p-8">
-            <h1>Portafolio Web</h1>
-        </div>
-        <div class="border grid justify-center content-center w-full">
-            <ul class="border flex gap-6 p-2">
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Contact</li>
+    <nav class="grid w-full absolute fade-in-down p-6">
+        <div class="grid justify-center content-center w-full">
+            <ul class="flex gap-6 p-2 text-white">
+                <li><a href="">Home</a></li>
+                <li><a href="">About me</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </div>
     </nav>
-
-    <header class="h-screen grid grid-cols-2 border p-40">
-        <div class="border grid justify-center content-center text-center">
+    <header class="h-screen grid-cols-1 md:grid grid-cols-2 gap-6 p-40 drop-shadow-2xl ">
+        <div class="grid justify-center content-center text-center">
             <h1 id="text1" class="text-6xl"></h1>
             <h1 id="text2" class="text-6xl"></h1>
             <p id="text3" class="text-3xl text-center"></p>
         </div>
-        <div class="border grid justify-center content-center">
-            IMG
+        <div class="grid justify-center content-center">
         </div>
     </header>
+
+    <section class="h-screen grid grid-cols-1 md:grid-cols-2 p-10 md:p-40 gap-6">
+        <div class="border grid order-2 md:order-1 justify-center content-center">
+            <img class="" src="/src/img/imgsection.png" alt="">
+        </div>
+        <div class="border order-1 md:order-2">
+            <h1 class="text-4xl text-center underline decoration-sky-500/30 font-bold">About me</h1>
+            <p class="indent-8 hyphens-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis sunt quos rerum quasi dolorem eius velit tenetur fuga. Repellat unde reiciendis blanditiis rerum officia quo suscipit doloremque odit. Quaerat, nam!</p>
+        </div>
+    </section>
+
+    <section class="h-screen">
+        <video playsinline muted autoplay loop class="absolute z-0 object-cover h-full w-full brightness-50">
+            <source src="/src/video/video.mp4" type="video/mp4" />
+        </video>
+    </section>
+
+    <footer class="p-40 grid grid-cols-2">
+        <div class="border">
+            1
+        </div>
+        <div class="border">
+            2
+        </div>
+    </footer>
 
 </body>
 
@@ -63,4 +83,9 @@
 
 
 </script>
+
+<script>
+    
+</script>
+
 </html>
