@@ -21,9 +21,10 @@
     </nav>
     <header class="h-screen grid-cols-1 md:grid grid-cols-2 gap-6 p-40 drop-shadow-2xl ">
         <div class="grid justify-center content-center text-center">
-            <h1 id="text1" class="text-6xl"></h1>
-            <h1 id="text2" class="text-6xl"></h1>
-            <p id="text3" class="text-3xl text-center"></p>
+            <span id="text1" class="text-6xl"></span>
+            <span id="text2" class="text-6xl"></span>
+            <span id="text3" class="text-3xl"></span>
+            <span id="blink1" class="blink">|</span>
         </div>
         <div class="grid justify-center content-center">
         </div>
@@ -58,34 +59,36 @@
 
 <script>
 
-    let string1 = "Hello,";
-    let string2 = "I'm Nolasco Medina";
-    let string3 = "Full Stack Web Developer.";
+    let string1 = "Hello, I'm Nolasco Medina Full Stack Web Developer";
     let array1 = string1.split("");
-    let array2 = string2.split("");
-    let array3 = string3.split("");
     let timer;
 
     function frameLooper () {
-        if (array1.length > 0) {
+        if (array1.length > 43) {
+
             document.getElementById("text1").innerHTML += array1.shift();
-        } else if (array2.length > 0) {
-            document.getElementById("text2").innerHTML += array2.shift();
-        } else if (array3.length > 0) {
-            document.getElementById("text3").innerHTML += array3.shift();
-        } else {
+            // let blink1 = document.getElementById("blink1")
+            // blink1.textContent = "|"
+            // if(array1.length < 44){
+            //     // let blink1 = document.getElementById("blink1")
+            //     blink1.remove()
+            // }
+
+        } else if(array1.length > 24){
+            document.getElementById("text2").innerHTML += array1.shift();
+        } else if(array1.length > 0){
+            document.getElementById("text3").innerHTML += array1.shift();
+        }else {
             clearTimeout(timer);
         }
         loopTimer = setTimeout('frameLooper()',70); /* change 70 for speed */
-
     }
     frameLooper();
-
 
 </script>
 
 <script>
-    
+
 </script>
 
 </html>

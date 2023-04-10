@@ -11,9 +11,7 @@ header{
     -webkit-animation: bg-animation 25s ease-in-out infinite;
     animation: bg-animation 25s ease-in-out infinite;
     filter: drop-shadow(0 50px 50px rgba(0, 0, 0, 1));
-    
 }
-
 
 @-webkit-keyframes bg-animation {
     0% {
@@ -40,20 +38,29 @@ header{
 }
 /* END HEADER BACKGROUND */
 
-header > div > h1:first-child{
+header > div > span:first-child{
     color: aqua;
 }
 
-header > div > h1:nth-child(2){
+header > div > span:nth-child(2){
     color: rgb(255, 255, 255);
 }
 
-header > div > p{
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    text-decoration-color: #fff;
-    text-underline-position: under;
+header > div > span:nth-child(3){
     color: aqua;
+}
+
+.blink{
+    display: inline-block;
+    animation: blink 0.7s infinite; /* la animación dura 0.5 segundos y se repite infinitamente */
+    color: #fff;
+    /* content: "|"; */
+}
+
+
+@keyframes blink {
+    from { opacity: 1; } /* la animación comienza con opacidad completa */
+    to { opacity: 0; } /* la animación termina con opacidad cero */
 }
 
 .fade-in-down{
@@ -69,3 +76,4 @@ header > div > p{
       transform: translateY(0);
     }
   }
+
