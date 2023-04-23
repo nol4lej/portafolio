@@ -15,4 +15,5 @@ function frameLooper () {
     loopTimer = setTimeout('frameLooper()',70); /* change 70 for speed */
 
 }
+
 frameLooper();
