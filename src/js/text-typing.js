@@ -4,15 +4,7 @@ let timer;
 
 function frameLooper () {
     if (array1.length > 43) {
-
         document.getElementById("text1").innerHTML += array1.shift();
-        // let blink1 = document.getElementById("blink1")
-        // blink1.textContent = "|"
-        // if(array1.length < 44){
-        //     // let blink1 = document.getElementById("blink1")
-        //     blink1.remove()
-        // }
-
     } else if(array1.length > 24){
         document.getElementById("text2").innerHTML += array1.shift();
     } else if(array1.length > 0){
@@ -21,5 +13,6 @@ function frameLooper () {
         clearTimeout(timer);
     }
     loopTimer = setTimeout('frameLooper()',70); /* change 70 for speed */
+
 }
 frameLooper();
