@@ -11,59 +11,6 @@ header, .about-text{
     filter: drop-shadow(0 50px 50px rgba(0, 0, 0, 1));
 }
 
-.fade-in-down{
-    animation: fade-in-down2 1s ease;
-  }
-  @keyframes fade-in-down2 {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-.fade-in{
-    animation: fade-in 2s ease-in;
-}
-
-@keyframes fade-in{
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.bounce {
-    animation: bounce 2s ease infinite;
-    animation-duration: 60s;
-  }
-  @keyframes bounce {
-      0%, 100% {transform: translateY(0);}
-      10%, 30%, 50%, 70%, 90% {transform: translateY(-50px);}
-      20%, 40%, 60%, 80% {transform: translateY(10px);}
-  }
-
-.bounce2 {
-animation: bounce2-inverted 2s ease infinite;
-animation-duration: 60s;
-}
-@keyframes bounce2-inverted {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    10%, 30%, 50%, 70%, 90% {
-      transform: translateY(10px);
-    }
-    20%, 40%, 60%, 80% {
-      transform: translateY(-50px);
-    }
-  }
-
 nav{
     transition: all 0.5s ease-in-out;
     padding: 40px;
@@ -83,3 +30,70 @@ nav{
     filter: drop-shadow(0 25px 25px rgb(0 0 0 / 1));
 }
 
+.fade-in-down{
+  animation: fade-in-down2 1s ease;
+}
+@keyframes fade-in-down2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in{
+  animation: fade-in 2s ease-in;
+}
+@keyframes fade-in{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.bounce {
+  animation: bounce 2s ease-in-out infinite;
+  animation-duration: 100s;
+}
+@keyframes bounce {
+  0%, 100% {transform: translateY(0) rotate(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateY(-200px) rotate(360deg);}
+  20%, 40%, 60%, 80% {transform: translateY(10px) rotate(-360deg);}
+}
+
+.bounce2 {
+  animation: bounce2 2s ease-in-out infinite;
+  animation-duration: 100s;
+}
+@keyframes bounce2 {
+  0%, 100% {transform: translateY(0) rotate(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateY(-200px) rotate(-360deg);}
+  20%, 40%, 60%, 80% {transform: translateY(10px) rotate(360deg);}
+}
+
+.rotate{
+  animation: rotate infinite linear;
+  animation-duration: 20s;
+}
+@keyframes rotate{
+  0% {
+    transform: rotate(0deg); /* El elemento comienza sin rotación */
+  }
+  100% {
+    transform: rotate(360deg); /* El elemento termina con una rotación completa de 360 grados */
+  }
+}
+
+.rotate2{
+  animation: rotate2 infinite linear;
+  animation-duration: 20s;
+}
+@keyframes rotate2{
+  0% {
+    transform: rotate(360deg); /* El elemento comienza sin rotación */
+  }
+  100% {
+    transform: rotate(0deg); /* El elemento termina con una rotación completa de 360 grados */
+  }
+}
