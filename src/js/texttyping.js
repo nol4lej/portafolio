@@ -1,9 +1,9 @@
-let string1 = "Hello, I'm Nolasco Medina Full Stack Web Developer";
+let string1 = "Hello, my name is Nolasco Medina Full Stack Web Developer";
 let array1 = string1.split("");
 let timer;
 
 function frameLooper () {
-    if (array1.length > 43) {
+    if (array1.length > 40) {
         document.getElementById("text1").innerHTML += array1.shift();
     } else if(array1.length > 24){
         document.getElementById("text2").innerHTML += array1.shift();

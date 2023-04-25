@@ -3,11 +3,11 @@
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #2c3e63;
+    background-color: #1b263b;
 }
 
-header{
-    background-color: #111827;
+header, .about-text{
+    background-color: #0d1b2a;
     filter: drop-shadow(0 50px 50px rgba(0, 0, 0, 1));
 }
 
@@ -38,15 +38,48 @@ header{
     }
 }
 
+.bounce {
+    animation: bounce 2s ease infinite;
+    animation-duration: 60s;
+  }
+  @keyframes bounce {
+      0%, 100% {transform: translateY(0);}
+      10%, 30%, 50%, 70%, 90% {transform: translateY(-50px);}
+      20%, 40%, 60%, 80% {transform: translateY(10px);}
+  }
+
+.bounce2 {
+animation: bounce2-inverted 2s ease infinite;
+animation-duration: 60s;
+}
+@keyframes bounce2-inverted {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateY(10px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateY(-50px);
+    }
+  }
+
 nav{
     transition: all 0.5s ease-in-out;
     padding: 40px;
+    color: #eef4ed;
 }
 
 .navbar-shrink {
-    background-color: #2b3c63;
+    background-color: #eef4ed;
+    color: #0b2545;
     transition: all 0.5s ease-in-out;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
     margin-top: -1.5rem;
 }
+
+.about-img{
+    filter: drop-shadow(0 25px 25px rgb(0 0 0 / 1));
+}
+
