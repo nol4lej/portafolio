@@ -6,9 +6,14 @@ body{
     background-color: #1b263b;
 }
 
-header, .about-text{
+header{
     background-color: #0d1b2a;
     filter: drop-shadow(0 50px 50px rgba(0, 0, 0, 1));
+}
+
+.about-text{
+  background-color: #34495E;
+  filter: drop-shadow(0 50px 50px rgba(0, 0, 0, 1));
 }
 
 nav{
@@ -26,8 +31,12 @@ nav{
     margin-top: -1.5rem;
 }
 
-.about-img{
-    filter: drop-shadow(0 25px 25px rgb(0 0 0 / 1));
+.drop-shadow-bottom{
+  filter: drop-shadow(0 10px 4px rgba(0, 0, 0, 0.25));
+}
+
+.drop-shadow-top{
+  filter: drop-shadow(0 -10px 4px rgba(0, 0, 0, 0.25));
 }
 
 .fade-in-down{
@@ -53,14 +62,24 @@ nav{
 }
 
 .bounce {
-  animation: bounce 2s ease-in-out infinite;
-  animation-duration: 100s;
+  animation: bounce 30s linear infinite;
+  /* animation-duration: 100s; */
 }
 @keyframes bounce {
-  0%, 100% {transform: translateY(0) rotate(0);}
-  10%, 30%, 50%, 70%, 90% {transform: translateY(-200px) rotate(360deg);}
-  20%, 40%, 60%, 80% {transform: translateY(10px) rotate(-360deg);}
+  0% {
+    bottom: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    bottom: 200px;
+    transform: rotate(360deg);
+  }
+  100% {
+    bottom: 0;
+    transform: rotate(720deg);
+  }
 }
+
 
 .bounce2 {
   animation: bounce2 2s ease-in-out infinite;
