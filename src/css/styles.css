@@ -16,19 +16,23 @@ header{
   filter: drop-shadow(0 50px 50px rgba(0, 0, 0, 1));
 }
 
-nav{
+.no-rspv{
     transition: all 0.5s ease-in-out;
     padding: 40px;
     color: #eef4ed;
 }
 
-.navbar-shrink {
+.navbar-shrink{
     background-color: #eef4ed;
     color: #0b2545;
     transition: all 0.5s ease-in-out;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
     margin-top: -1.5rem;
+}
+
+#menu-rpsv{
+  transition: all 0.5s ease-in-out;
 }
 
 .drop-shadow-bottom{
