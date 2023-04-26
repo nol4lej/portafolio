@@ -1,5 +1,4 @@
-// const navbarCollapsible = document.querySelector('nav');
-const navbarCollapsible = document.getElementById('menu-rpsv');
+// const navbarCollapsible = document.getElementById('nav');
 const btn_rpsv = document.getElementById("btn-rpsv");
 const menu_rpsv = document.getElementById("menu-rpsv")
 
@@ -22,7 +21,6 @@ window.addEventListener("load", function(){
 const visibility = () =>{
     if(menu_rpsv.classList.contains("hidden")){
         menu_rpsv.classList.replace("hidden", "block");
-        menu_rpsv.classList.add("no-rspv");
     } else {
         menu_rpsv.classList.replace("block", "hidden");
     }
