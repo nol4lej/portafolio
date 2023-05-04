@@ -99,14 +99,14 @@ header{
 }
 
 .header_text_container > span:first-child{
-  font-size: 60px;
+  font-size: 33px;
   background: linear-gradient(120deg,#d83182,#633288,#41d1ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .header_text_container > span:nth-child(2){
-  font-size: 60px;
+  font-size: 30px;
   color: rgba(255,255,245,.86);
 }
 
@@ -259,6 +259,10 @@ footer > p{
   .header_text_container{
     font-size: 30px;
     font-weight: 600;
+  }
+
+  .header_text_container > span:first-child, .header_text_container > span:nth-child(2){
+    font-size: 60px;
   }
 
   .technologies{
