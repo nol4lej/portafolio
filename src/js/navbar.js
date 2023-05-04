@@ -1,13 +1,19 @@
 const menu_container = document.getElementById("menu_container")
 const body = document.getElementById("body");
+const hamburger = document.getElementById("hamburger");
+const cross = document.getElementById("cross");
 
 function buttonAction() {
     if (menu_container.style.display === "block") {
         menu_container.style.display = "none";
         body.style.overflow = "";
+        cross.style.display = "none"
+        hamburger.style.display = "block"
     } else {
         menu_container.style.display = "block";
         body.style.overflow = "hidden";
+        cross.style.display = "block"
+        hamburger.style.display = "none"
     }
   }
 

@@ -37,11 +37,35 @@ nav{
   height: 20px;
 }
 
+.nav-btn{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .nav-btn > svg{
   fill: currentColor;
   width: 20px;
   height: 20px;
 }
+
+.nav-btn > svg:hover{
+  background-color: #ff558f;
+  border-radius: 2px;
+  transition: background .25s;
+}
+
+.cross{
+  display: none;
+}
+
+.hamburger{
+  display: block;
+}
+
+/* .nav-btn:active, .nav-btn:focus{
+  background-color: red;
+} */
 
 .menu_container{
   background-color: #282828;
@@ -288,15 +312,18 @@ footer > p{
 
   .header_logo_container{
     order: 2;
+    
   }
 
   .header_logo_container > img{
     max-height: 420px;
     max-width: 420px;
+    transform: translate(-32px, -32px);
   }
 
   .header_content_container{
     order: 1;
+    width: 50%;
   }
 
   .header_text_container, .header_buttons_container{
