@@ -1,27 +1,29 @@
-// const navbarCollapsible = document.getElementById('nav');
-const btn_rpsv = document.getElementById("btn-rpsv");
-const menu_rpsv = document.getElementById("menu-rpsv")
+const menu_container = document.getElementById("menu_container")
+const body = document.getElementById("body");
 
-window.addEventListener("scroll", function(){
-    if (!navbarCollapsible) {
-        return;
-    } if (window.scrollY === 0) {
-        navbarCollapsible.classList.remove('navbar-shrink')
+function buttonAction() {
+    if (menu_container.style.display === "block") {
+        menu_container.style.display = "none";
+        body.style.overflow = "";
     } else {
-        navbarCollapsible.classList.add('navbar-shrink')
+        menu_container.style.display = "block";
+        body.style.overflow = "hidden";
     }
-})
+  }
 
-window.addEventListener("load", function(){
-    if(window.pageYOffset > 1){
-        navbarCollapsible.classList.add('navbar-shrink')
-    }
-})
-
-const visibility = () =>{
-    if(menu_rpsv.classList.contains("hidden")){
-        menu_rpsv.classList.replace("hidden", "block");
-    } else {
-        menu_rpsv.classList.replace("block", "hidden");
+function handleResize(){
+    if (window.innerWidth < 768 && body.style.overflow === "hidden"){
+        menu_container.style.display = "none";
+        body.style.overflow = "";
     }
 }
+window.addEventListener('resize', handleResize);
+
+function navResize(){
+    if (window.innerWidth > 640){
+        menu_container.style.display = "flex";
+    } else {
+        menu_container.style.display = "none";
+    }
+}
+window.addEventListener('resize', navResize);

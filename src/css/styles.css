@@ -1,27 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 body{
+    display: block;
     padding: 0 5%;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     background-color: #282828;
 }
 
-h2{
-  color: rgba(255,255,245,.86);
+a{
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .25s;
 }
 
 /* NAV - NAV - NAV - NAV */
 nav{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
+
+.logo-button_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_container{
+  display: flex;
+}
+
+.logo_container > img{
+  width: 20px;
+  height: 20px;
+}
+
+.nav-btn > svg{
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.menu_container{
+  background-color: #282828;
+  display: none;
+  height: 100vh;
+}
+
+.menu_buttons{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.menu_buttons > a{
+  color: #fff;
+  padding: 5px;
+  border-bottom: 1px solid rgba(82,82,89,.32);;
+}
+
+.menu_buttons > a:hover{
+  color: #db2777
+}
+
 /* NAV - NAV - NAV - NAV */
 
 /* HEADER - HEADER - HEADER - HEADER */
 header{
   display: flex;
   flex-direction: column;
-  padding: 10% 0 30% 0;
+  padding: 10% 0 35% 0;
 }
 
 .header_logo_container{
@@ -37,18 +87,27 @@ header{
 .header_logo_container > img{
   max-height: 192px;
   max-width: 192px;
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.2));
 }
 
 .header_text_container{
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  font-size: 32px;
+  font-size: 16px;
   font-weight: 600;
 }
 
-.header_text_container > h1{
+.header_text_container > span:first-child{
+  font-size: 60px;
   background: linear-gradient(120deg,#d83182,#633288,#41d1ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.header_text_container > span:nth-child(2){
+  font-size: 60px;
+  color: rgba(255,255,245,.86);
 }
 
 .header_text_container > p{
@@ -66,14 +125,23 @@ header{
   padding-top: 24px;
 }
 
-.header_buttons_container > button{
+.header_buttons_container > a{
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   padding: 10px;
   color: #fff;
   font-weight: 600;
   border-radius: 20px;
+  width: 100px;
+  height: 20px;
+}
+
+.header_buttons_container > a > svg {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
 }
 
 .btn_contact{
@@ -90,7 +158,6 @@ header{
 /* HEADER - HEADER - HEADER - HEADER */
 
 /* SECTION - SECTION - SECTION - SECTION */
-
 .technologies{
   display: flex;
   flex-direction: column;
@@ -114,21 +181,69 @@ header{
   align-items: center;
   border-radius: 6px;
   margin-bottom: 10px;
-  height: 50%;
-
 }
 
 .technologies > article > div > img{
   width: 20%;
-  /* height: 20%; */
+}
+
+.technologies > article > h2 {
+  color: rgba(255,255,245,.86);
 }
 
 .technologies > article > p{
   padding-top: 8px;
-  color: rgba(235,235,245,.6);;
+  color: rgba(235,235,245,.6);
+}
+/* SECTION - SECTION - SECTION - SECTION */
+
+/* FOOTER - FOOTER- FOOTER - FOOTER */
+
+footer{
+  padding: 2%;
+  text-align: center;
 }
 
+footer > p{
+  color:  rgba(235,235,245,.6);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+/* FOOTER - FOOTER- FOOTER - FOOTER */
+
+
 @media screen and (min-width: 640px){
+
+  /* NAVBAR - NAVBAR - NAVBAR - NAVBAR */
+  nav{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu_container{
+    display: flex;
+    height: 100%;
+  }
+
+  .menu_buttons{
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .menu_buttons > a{
+    border-bottom: 1px solid #282828;
+  }
+
+  .menu_buttons > a:hover{
+    border-bottom: 1px solid #db2777;
+  }
+
+  .nav-btn{
+    display: none;
+  }
+  /* NAVBAR - NAVBAR - NAVBAR - NAVBAR */
 
   header{
     padding: 5% 0 7% 0;
@@ -142,7 +257,7 @@ header{
   }
 
   .header_text_container{
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 600;
   }
 
@@ -152,8 +267,10 @@ header{
   }
 
   .technologies > article{
-    flex-basis: calc(50% - 10px);
+    flex-basis: calc(50% - 50px);
   }
+
+
 
 }
 
@@ -187,4 +304,10 @@ header{
     flex-wrap: nowrap;
   }
 
+}
+
+@media screen and (min-width: 1200px){
+  .technologies{
+    padding: 0 10% 0 10%;
+  }
 }
