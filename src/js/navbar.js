@@ -7,13 +7,13 @@ function buttonAction() {
     if (menu_container.style.display === "block") {
         menu_container.style.display = "none";
         body.style.overflow = "";
-        cross.style.display = "none"
-        hamburger.style.display = "block"
+        cross.style.display = "none";
+        hamburger.style.display = "block";
     } else {
         menu_container.style.display = "block";
         body.style.overflow = "hidden";
-        cross.style.display = "block"
-        hamburger.style.display = "none"
+        cross.style.display = "block";
+        hamburger.style.display = "none";
     }
   }
 
@@ -21,6 +21,8 @@ function handleResize(){
     if (window.innerWidth < 768 && body.style.overflow === "hidden"){
         menu_container.style.display = "none";
         body.style.overflow = "";
+        cross.style.display = "none";
+        hamburger.style.display = "block";
     }
 }
 window.addEventListener('resize', handleResize);
@@ -33,3 +35,5 @@ function navResize(){
     }
 }
 window.addEventListener('resize', navResize);
+
+

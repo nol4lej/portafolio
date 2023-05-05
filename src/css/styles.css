@@ -6,6 +6,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     background-color: #282828;
+    animation: fade-in 1s linear;
 }
 
 a{
@@ -20,6 +21,7 @@ nav{
   display: flex;
   flex-direction: column;
   padding: 20px;
+  animation: fade-in-down 1s ease-in-out;
 }
 
 .logo-button_container{
@@ -40,7 +42,14 @@ nav{
 .nav-btn{
   background-color: transparent;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
+  animation: fade-in 1s linear;
+}
+
+.nav-btn:hover{
+  background-color: #ff558f;
+  border-radius: 5px;
 }
 
 .nav-btn > svg{
@@ -49,28 +58,21 @@ nav{
   height: 20px;
 }
 
-.nav-btn > svg:hover{
-  background-color: #ff558f;
-  border-radius: 2px;
-  transition: background .25s;
-}
-
 .cross{
   display: none;
+  animation: fade-in 1s linear;
 }
 
 .hamburger{
   display: block;
+  animation: fade-in 1s linear;
 }
 
-/* .nav-btn:active, .nav-btn:focus{
-  background-color: red;
-} */
-
 .menu_container{
-  background-color: #282828;
+  background-color: transparent;
   display: none;
   height: 100vh;
+  animation: fade-in-down 1s ease-in-out;
 }
 
 .menu_buttons{
@@ -340,5 +342,35 @@ footer > p{
 @media screen and (min-width: 1200px){
   .technologies{
     padding: 0 10% 0 10%;
+  }
+}
+
+
+/* EFFECTS - EFFECTS - EFFECTS - EFFECTS */
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-out-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
   }
 }
