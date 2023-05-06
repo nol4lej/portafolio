@@ -223,6 +223,24 @@ header{
   padding-top: 8px;
   color: rgba(235,235,245,.6);
 }
+
+.scrum_link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid red;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-color: #313136;
+  border-color: rgba(82,82,89,.68);
+  padding: 10px;
+}
+
+.scrum_link > svg{
+  width: 20px;
+}
 /* SECTION - SECTION - SECTION - SECTION */
 
 /* FOOTER - FOOTER- FOOTER - FOOTER */
