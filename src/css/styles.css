@@ -273,6 +273,7 @@ header{
 .projects{
   display: flex;
   flex-direction: column;
+  gap: 2em;
 }
 
 .projects_title{
@@ -483,6 +484,15 @@ footer > p{
 
   .project_card{
     flex-direction: row;
+    align-items: center;
+  }
+
+  .project_card_img{
+    width: 40%;
+  }
+
+  .project_card_content{
+    width: 60%;
   }
 
 }
