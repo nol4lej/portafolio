@@ -229,8 +229,12 @@ header{
   height: 80px;
 }
 
-.technologies > article > div > img{
+.technologies_imgs{
   width: 14%;
+}
+
+.solidity{
+  width: 48%;
 }
 
 .technologies > article > h2 {
@@ -427,9 +431,11 @@ footer > p{
     flex-basis: calc(50% - 50px);
   }
 
-  .technologies > article > div > img{
+  .technologies_imgs{
     width: 20%;
   }
+
+
 
   .technologies > article > h2 {
     text-align: left;
@@ -500,11 +506,6 @@ footer > p{
 @media screen and (min-width: 1200px){
   .technologies{
     padding: 0 10% 0 10%;
-  }
-
-  .solidity{
-    width: 100%;
-    height: 100%;
   }
 
   .projects_container{
