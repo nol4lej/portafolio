@@ -473,6 +473,7 @@ footer > p{
   .technologies {
     flex-wrap: wrap;
   }
+  
   .technologies > article {
     flex-basis: calc(30% - 30px);
   }
