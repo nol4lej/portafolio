@@ -1,0 +1,106 @@
+.technologies{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+    gap: 15px;
+  }
+  
+  .technologies > article{
+    background-color: #252529;
+    border: 1px solid #252529;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  
+  .technologies > article > div{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+    background-color: #1e1e20;
+    align-items: center;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    height: 80px;
+  }
+  
+  .technologies_imgs{
+    width: 14%;
+  }
+  
+  .solidity{
+    width: 48%;
+  }
+  
+  .technologies > article > h2 {
+    color: rgba(255,255,245,.86);
+    text-align: center;
+  }
+  
+  .technologies > article > p{
+    padding-top: 8px;
+    color: rgba(235,235,245,.6);
+  }
+  
+  .scrum_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid;
+    color: #fff;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: #313136;
+    border-color: rgba(82,82,89,.68);
+    padding: 10px;
+    transition: all 0.5s ease;
+  }
+  
+  .scrum_link:hover{
+    background-color: #47474e;
+    border-color: #ff85ae;
+  }
+  
+  .scrum_link > svg{
+    width: 20px;
+  }
+
+  @media screen and (min-width: 640px){
+
+    .technologies{
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  
+    .technologies > article{
+      flex-basis: calc(50% - 50px);
+    }
+  
+    .technologies_imgs{
+      width: 20%;
+    }
+  
+  
+  
+    .technologies > article > h2 {
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+
+    .technologies {
+      flex-wrap: wrap;
+    }
+    
+    .technologies > article {
+      flex-basis: calc(30% - 30px);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .technologies{
+      padding: 0 10% 0 10%;
+    }
+}

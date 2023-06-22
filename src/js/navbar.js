@@ -1,7 +1,10 @@
-const menu_container = document.getElementById("menu_container")
+const menu_container = document.getElementById("menu-container")
 const body = document.getElementById("body");
 const hamburger = document.getElementById("hamburger");
 const cross = document.getElementById("cross");
+const nav_btn = document.getElementById("nav-btn")
+
+nav_btn.onclick = buttonAction;
 
 function buttonAction() {
     if (menu_container.style.display === "block") {
