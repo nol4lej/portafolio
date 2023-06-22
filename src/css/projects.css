@@ -11,6 +11,14 @@
     font-weight: 800;
     color: rgba(255,255,245,.86);
   }
+
+  .project_card_link{
+    color: var(--pink-seconday)
+  }
+
+  .project_card_link i{
+    font-size: 16px;
+  }
   
   .projects_container{
     display: flex;

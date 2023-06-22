@@ -5,6 +5,7 @@
   --font-white: #fff;
   --pink-primary: #ff558f;
   --pink-seconday: #db2777;
+  --blue-primary: #41d1ff;
   --gray-primary: rgba(82,82,89,.32);
 }
 
@@ -25,6 +26,11 @@ a{
   text-decoration: none;
   cursor: pointer;
   transition: color .25s;
+  color: none;
+}
+
+mark{
+  color: var(--pink-seconday);
 }
 
 
