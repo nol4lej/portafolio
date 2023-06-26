@@ -9,9 +9,12 @@
 
 :root{
   --bg-primary-color: #282828;
+  --bg-secondary-color: #313136;
   --font-white: #fff;
+  --font-white-secundary: rgba(255,255,245,.86);
+  --font-white-third: rgba(235,235,245,.6);
   --pink-primary: #ff558f;
-  --pink-seconday: #db2777;
+  --pink-secondary: #db2777;
   --blue-primary: #41d1ff;
   --gray-primary: rgba(82,82,89,.32);
 }

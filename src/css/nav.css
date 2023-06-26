@@ -39,20 +39,9 @@
   border-radius: 5px;
 }
 
-.navegator__button > svg{
-  fill: currentColor;
-  width: 40px;
-  height: 40px;
-}
-
-.cross{
-  display: none;
-  animation: fade-in 1s linear;
-}
-
-.hamburger{
-  display: block;
-  animation: fade-in 1s linear;
+.navegator__button i{
+  color: var(--font-white-secundary);
+  transition: all .5s ease-in-out;
 }
 
 .container__menu{
@@ -83,11 +72,11 @@
 }
 
 .menu__link:hover{
-  color: var(--pink-seconday);
+  color: var(--pink-secondary);
 }
 
 .menu__link i{
-  color: var(--pink-seconday);
+  color: var(--pink-secondary);
 }
 
 @media screen and (min-width: 640px){
