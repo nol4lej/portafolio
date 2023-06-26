@@ -1,13 +1,11 @@
-/* FOOTER - FOOTER- FOOTER - FOOTER */
-footer{
-    padding: 2%;
-    text-align: center;
-  }
-  
-  footer > p{
-    color:  rgba(235,235,245,.6);
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 30px;
-  }
-  /* FOOTER - FOOTER- FOOTER - FOOTER */
+.footer{
+  padding: 2%;
+  text-align: center;
+}
+
+.footer__text{
+  color:  rgba(235,235,245,.6);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 30px;
+}
