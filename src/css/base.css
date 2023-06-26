@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('/src/css/footer.css');
+@import url('/src/css/header.css');
+@import url('/src/css/nav.css');
+@import url('/src/css/normalize.css');
+@import url('/src/css/projects.css');
+@import url('/src/css/technologies.css');
+
 
 :root{
   --bg-primary-color: #282828;
