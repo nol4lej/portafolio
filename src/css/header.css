@@ -28,12 +28,31 @@
   font-weight: 600;
 }
 
-.header__title{
+.header__title {
   margin: 0;
   font-size: 33px;
-  background: linear-gradient(120deg,#d83182,#633288,#41d1ff);
+  background: linear-gradient(120deg, 
+    rgb(216, 49, 130), 
+    rgb(99, 50, 136), 
+    rgb(65, 209, 255));
+  animation: colorShift 8s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-size: 300% 300%;
+
+}
+
+
+@keyframes colorShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .header__subtitle{
