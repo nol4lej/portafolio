@@ -10,17 +10,12 @@
 </head>
 <body id="body">
 
-    <nav class="navegator">
-        <div class="container__logo-buttons">
-            <div class="container__logo">
-                <img class="logo" src="src/img/logo.svg" alt="">
-                <span>N M P</span>
-            </div>
-            <button class="navegator__button" id="nav-btn">
-                <i class="material-icons" id="nav-icon">menu</i>
-            </button>
+    <nav class="nav">
+        <div class="nav__container">
+            <img class="nav__logo" src="/src/img/logo.svg" alt="">
+            <button id="toggleBtn" class="material-icons toggleBtn">menu</button>
         </div>
-        <div class="container__menu" id="menu-container">
+        <div class="nav__menu" id="nav__menu">
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="#"><i class="material-icons">home</i>Home</a></li>
                 <li class="menu__item"><a class="menu__link" href="#projects"><i class="material-icons">folder</i>Proyectos</a></li>
@@ -29,7 +24,7 @@
         </div>
     </nav>
 
-    <header class="header">
+    <header class="header container">
         <div class="header__logo">
             <img class="big__logo" src="src/img/logo.svg" alt="">
         </div>
@@ -55,10 +50,9 @@
                 </a>
             </div>
         </div>
-
     </header>
 
-    <section class="technologies">
+    <section class="technologies container">
         <article class="technologies__card">
             <div class="card__images">
                 <img class="card__image" src="src/img/html.png" alt="">
@@ -120,7 +114,7 @@
         </article>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="projects container" id="projects">
         <div class="projects__title">Proyectos</div>
         <div class="projects__container">
             <div class="project__card">
